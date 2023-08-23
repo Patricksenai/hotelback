@@ -13,9 +13,11 @@ public class HotelApplication {
 		SpringApplication.run(HotelApplication.class, args);
 
 
-		Hotel nome = new Hotel("Hotel JPR");
-
+		Hotel nome = new Hotel("Hotel JPR", "Rua do Hotel, 607");
+		System.out.println(nome.nomeHotel);
+		System.out.println(nome.endereco);
 		System.out.println(nome.getCnpj());
+
 	}
 
 	
