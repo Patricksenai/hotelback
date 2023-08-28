@@ -1,15 +1,22 @@
 package classes;
 
 public class Funcionario extends Pessoa {
-    public String cargo;
+    private String cargo;
     private String ctps;
     
-    public Funcionario(String nome, String email, String cpf, String cargo, String ctps) {
-        super(nome, email, cpf);
+    public Funcionario(String nome, String email, String cpf, String cargo, String ctps, Endereco endereco) {
+        super(nome, email, cpf, endereco);
         this.cargo = cargo;
         this.ctps = ctps;
     }
 
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
     public String getCtps() {
         return ctps;
     }
